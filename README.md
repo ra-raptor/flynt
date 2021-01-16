@@ -2,6 +2,8 @@
 
 ## flyn't is a simple game to test hand to eye coordintion , created in React
 
+## hosted link : [https://flynt.netlify.app](https://flynt.netlify.app)
+
 ## Available Scripts
 
 In the project directory, you can run:
