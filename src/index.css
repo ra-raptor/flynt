@@ -1,0 +1,24 @@
+*{
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+*:focus
+{
+    outline: none;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #ebf3f3;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

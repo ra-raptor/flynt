@@ -1,0 +1,195 @@
+#game{
+    margin: 0 auto;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(135deg,#555,#333);
+    overflow: hidden;
+}
+
+.card{
+    width: 70vw;
+    background: radial-gradient(#fff,#ccc);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.705);
+}
+
+.time-left{
+    margin: 0;
+    width: 0%;
+    height: 1rem;
+    background: linear-gradient(455deg,rgb(31, 182, 11), rgb(138, 212, 109));
+    animation: progess 4s linear  ;
+}
+
+@keyframes progess{
+    0%{
+        width: 100%;
+        background: linear-gradient(455deg,rgb(31, 182, 11), rgb(138, 212, 109));
+    }
+    70%{
+        width: 20%;
+        background: linear-gradient(455deg,rgb(31, 182, 11), rgb(138, 212, 109));
+    }
+    71%{
+        width: 19%;
+        background: linear-gradient(455deg,rgb(182, 11, 11), rgb(212, 118, 109));
+    }
+    100%{
+        width: 0%;
+        background: linear-gradient(455deg,rgb(182, 11, 11), rgb(212, 118, 109));
+    }
+}
+
+.card-main{
+    width: 100%;
+
+}
+
+.card-main .hud{
+    margin-bottom: 6rem;
+    font-size: 1.3rem;
+    display: flex;
+
+}
+
+.card-main .hud div{
+    margin:  0;
+    padding: .5rem 1.5rem;
+}
+/* .card-main .hud .number{
+
+} */
+.card-main .hud .lives{
+    margin-left: auto;
+    max-height: inherit;
+}
+
+
+.card-main p{
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 6rem;
+}
+
+.card .card-btn{
+    width: 100%;
+    background: linear-gradient(-45deg,#0162c8,#55e7fc);
+    height: 3rem;
+    color: white;
+    line-height: 3rem;
+    font-size: 1.4rem;
+
+}
+
+.card .card-btn:focus{
+    background: linear-gradient(-45deg,#034e9e,#38e1fb);
+    
+}
+
+.anim{
+    color: red;
+    font-size: 1rem;
+    position: relative;
+    top: 0;
+    right: 0.8rem;
+    display: none;
+}
+
+@keyframes minusHeart{
+    0%{
+        opacity: 1;
+        top: 0rem;
+    }
+
+    30%{
+        opacity: 0;
+        top: 2rem;
+       
+    }
+
+    31%{
+        display: none;
+        opacity: 0;
+        top: 6rem;
+    }
+
+    100%{
+        display: none;
+        opacity: 0;
+        top: 6rem;
+    }
+}
+
+@media screen and (min-width:320px){
+    .card{
+        width: 80vw;
+    }
+
+    .card-main p{
+        font-size: 2rem;
+        margin-bottom: 4rem;
+    }
+    .card-main .hud{
+        margin-bottom: 4rem;
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (min-width:375px){
+    .card-main .hud{
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (min-width:425px){
+    .card-main .hud{
+        font-size: 1.3rem;
+        margin-bottom: 5rem;
+    }
+
+    .card-main p{
+        font-size: 2.5rem;
+        margin-bottom: 5rem;
+    }
+
+    /* .card .card-btn */
+}
+@media screen and (max-width:425px){
+    .card .card-btn{
+        height: 3.6rem;
+    }
+}
+@media screen and (min-width:768px){
+    .card{
+        width: 60vw;
+    }
+    .card-main .hud{
+        font-size: 1.6rem;
+        margin-bottom: 6rem;
+    }
+
+    .card-main p{
+        font-size: 3rem;
+        margin-bottom: 6rem;
+    }
+}
+
+@media screen and (min-width:1024px){
+    .card{
+        width: 600px;
+    }
+    .card-main .hud{
+        font-size: 1.8rem;
+        margin-bottom: 8rem;
+    }
+
+    .card-main p{
+        font-size: 3.2rem;
+        margin-bottom: 8rem;
+    }
+}

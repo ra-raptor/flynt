@@ -1,0 +1,74 @@
+.playbtn{
+    position: relative;
+    display: block;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    color: #fff;
+    width: 300px;
+    height: 42px;
+    text-align: center;
+    line-height: 42px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    z-index: 2;
+    transition: 1s;
+}
+
+.playbtn>.go{
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(-45deg,#0162c8,#55e7fc);
+    transition: 1s;
+}
+
+
+
+.playbtn>.go:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -moz-animation: go 10s linear infinite;
+    -webkit-animation: go 10s linear infinite;
+    -o-animation: go 10s linear infinite;
+    -ms-animation: go 10s linear infinite;
+    animation: go 10s linear infinite;
+    
+}
+
+@keyframes go{
+    0%{
+        width: 0%;
+    }
+    90%{
+        width: 0%;
+        background: linear-gradient(135deg,#55e6fc4f,#269bdf5c);
+    }
+    95%{
+        width: 100%;
+        background: linear-gradient(135 deg,#55e6fc6c,#4399f573);
+
+    }
+    100%{
+        width: 100%;
+        
+    }
+    
+}
+
+.playbtn:hover {
+    font-weight: 600;
+}
+
+
+@media screen and (max-width:320px){
+    .playbtn{
+        width: 85%;
+    }
+}
